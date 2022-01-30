@@ -9,6 +9,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="This Tab Will Contain all The Videos About Tourist Spots"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:layout_marginTop="200dp"/>
 
 </FrameLayout>

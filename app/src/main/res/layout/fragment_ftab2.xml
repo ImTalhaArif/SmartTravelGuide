@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
     tools:context=".ftab2">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <!-- Now the Main toolbar for the search fragment -->
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="12"
+        android:padding="1dp">
+
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_dark"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <EditText
+        android:id="@+id/search_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="130px"
+        android:layout_weight="12"
+        android:background="@drawable/edit_txt"
+        android:hint="  Search Here..."
+        android:textColor="@color/black"
+
+        />
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+
+            android:background="@android:color/holo_blue_dark"
+            android:src="@drawable/ic_baseline_search_24"
+
+            />
+    </LinearLayout>
+    <!-- The Web View Starts Here -->
+     <WebView
+         android:id="@+id/web_view"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/black"/>
+
+
+</LinearLayout>

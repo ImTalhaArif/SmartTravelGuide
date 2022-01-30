@@ -37,6 +37,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         
 
+        
+
 
         tablayout=(TabLayout)findViewById(R.id.tabLayout);
         tabItem1=(TabItem)findViewById(R.id.tab1);
